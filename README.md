@@ -32,7 +32,7 @@ I am a Software Engineer focused on Full-Stack Web Development, Cloud Infrastruc
 ![](https://komarev.com/ghpvc/?username=vibhortanwar&style=flat-square&color=blueviolet&label=Profile+Views)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vibhortanwar/vibhortanwar/pacman-output/pacman-contribution-graph-dark.svg?v=1">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vibhortanwar/vibhortanwar/pacman-output/pacman-contribution-graph.svg?v=1">
-  <img alt="Pacman Contribution Graph" src="https://raw.githubusercontent.com/vibhortanwar/vibhortanwar/pacman-output/pacman-contribution-graph.svg?v=1">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vibhortanwar/vibhortanwar/pacman-output/github-contribution-grid-snake-dark.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vibhortanwar/vibhortanwar/pacman-output/github-contribution-grid-snake.svg?v=1">
+  <img alt="GitHub Contribution Grid Animation" src="https://raw.githubusercontent.com/vibhortanwar/vibhortanwar/pacman-output/github-contribution-grid-snake.svg?v=1">
 </picture>
