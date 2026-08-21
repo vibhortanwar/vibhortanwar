@@ -1,8 +1,8 @@
-name: Generate Contribution Snake Animation
+name: Generate Pacman Contribution Graph
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Run every 12 hours
+    - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -13,23 +13,20 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate Contribution Grid Animation
-        uses: Platane/snk@v3
+      - name: Generate pacman-contribution-graph.svg
+        uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: vibhortanwar
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          # Use your Personal Access Token to include private contributions
-          GITHUB_TOKEN: ${{ secrets.PAT_PACMAN }}
+          github_token: ${{ secrets.PAT_PACMAN }}
+          games: 'pacman'
+          theme: 'github-dark'
 
-      - name: Deploy SVGs to Output Branch
+      - name: Push to pacman-output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: pacman-output
